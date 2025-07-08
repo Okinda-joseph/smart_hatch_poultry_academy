@@ -1,2 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --bg-gradient: linear-gradient(180deg, #fde1ff, #e1ffe922 60%);
+    --box-shadow: 0 1px 3px -2px rgba(0, 0, 0);
+    --title-color: #171717;
+    --text-color: #545454;
+    --bs-red-color: #ff4141;
+    --bs-light: #c0c0c0;
+    --bs-dark: #242424;
+    --text-white: #ffffff;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --font-weight-600: 600;
+}
 
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    line-height: 1.7 !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-weight-600) !important;
+    color: var(--bs-dark) !important;
+}
+
+h5,
+h6 {
+    font-weight: var(--font-weight-500) !important;
+    color: var(--bs-light) !important;
+}
+
+.navbar {
+    background: var(--bs-dark) !important;
+    box-shadow: var(--box-shadow) !important;
+}
+
+.navbar-text {
+    font-size: 1.5rem !important;
+    font-weight: var(--font-weight-600) !important;
+    color: var(--bs-red-color) !important;
+}
+
+.navbar-text span {
+    margin-left: 10px !important;
+    color: var(--bs-light) !important;
+}
+
+.navbar-nav .nav-item a {
+    color: var(--bs-light) !important;
+    font-weight: var(--font-weight-500) !important;
+    font-size: 18px !important;
+}
+
+.nav-item .dropdown-menu {
+    border: none;
+    color: var(--bs-light) !important;
+    background: var(--bs-dark) !important;
+}
+
+.nav-item .dropdown-menu li a:hover {
+    background: var(--bs-red-color) !important;
+    color: var(--text-white) !important;
+}
+
+/* RE-USABLE */
+.bg-cover {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    object-fit: cover !important;
+}
+
+#header {
+    min-height: 100vh !important;
+    background: var(--bg-gradient), url(../assets/banner/banner.PNG);
+}
+
+.col-auto .h-small-title {
+    color: var(--text-color) !important;
+}
+
+.col-auto .hand-icon {
+    width: 80px !important;
+    margin-left: 20px !important;
+}
+
+#header #p-text {
+    font-style: italic !important;
+}
+
+.header-title {
+    font-weight: var(--font-weight-600) !important;
+    color: var(--text-color) !important;
+}
+
+.header-title::first-letter {
+    font-size: 4rem !important;
+}
+
+#btn {
+    background-color: var(--bs-red-color) !important;
+    border: 1px solid var(--bs-light) !important;
+    padding: 10px 20px;
+    border-radius: 20px !important;
+    transition: 0.5s ease;
+}
+
+#btn:hover {
+    background: none !important;
+}
+
+button img {
+    margin-left: 6px !important;
+}
